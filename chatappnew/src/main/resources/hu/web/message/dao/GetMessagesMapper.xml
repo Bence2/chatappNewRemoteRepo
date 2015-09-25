@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="hu.web.message.dao.GetMessagesMapper">
+	<resultMap type="hu.web.message.businessbeans.Message" id="Message">
+		<id column="Id" property="id"/>
+		<result column="Name" property="sendersName"/>
+		<result column="Message" property="message"/>
+		<result column="Date" property="date"/>
+	</resultMap>
+	
+	<select id="getAllMessages" resultMap="Message">
+		select * from person 	 	
+	</select>
+	
+</mapper>
