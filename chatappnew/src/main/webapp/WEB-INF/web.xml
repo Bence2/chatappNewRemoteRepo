@@ -20,12 +20,16 @@
 
 	<servlet-mapping>
 		<servlet-name>staticHandlerServlet</servlet-name>
-			<url-pattern>/static/*</url-pattern>		
-			<url-pattern>/chatapp/webjars/*</url-pattern>
-			<url-pattern>*.json</url-pattern>
-
-		
+		<url-pattern>/static/*</url-pattern>
+		<url-pattern>/chatapp/webjars/*</url-pattern>
+		<url-pattern>*.json</url-pattern>
 	</servlet-mapping>
+	<resource-ref>
+		<description>DB Connection</description>
+		<res-ref-name>jdbc/chatprogram</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
 
 
 </web-app>
