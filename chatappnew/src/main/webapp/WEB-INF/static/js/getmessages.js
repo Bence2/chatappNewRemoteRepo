@@ -12,5 +12,5 @@ var getmessagesservice = function($http) {
 
 };
 
-var mainmodule = angular.module("mainmodule");
-mainmodule.factory("getmessagesservice", getmessagesservice);
+var mainModule = angular.module("mainModule");
+mainModule.factory("getmessagesservice", getmessagesservice);

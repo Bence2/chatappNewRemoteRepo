@@ -13,17 +13,18 @@ var MainController = function($scope, $http,$location,  getmessagesservice) {
 	}
 };
 
-var app = angular.module("mainmodule", ['ngRoute']);
-angular.module("mainmodule").config(function($routeProvider){
+var app = angular.module("mainModule", ['ngRoute']);
+angular.module("mainModule").config(function($routeProvider){
 	console.log("route resz");
 	$routeProvider.
 
 				when(
 				"/route", 
-					{
-		        templateUrl: ""
-					}
-				)
+					{ templateUrl: ""} ).
+				when(
+				"/messages", 
+					{templateUrl: "static/html/messaging.html",
+					controller: 'MessagingController'})
 		});
 
 app.controller("MainController", MainController);

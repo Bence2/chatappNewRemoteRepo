@@ -1,18 +1,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<script type="text/javascript" src="webjars/angularjs/1.4.1/angular.js"></script>
-<script type="text/javascript" src="webjars/angularjs/1.4.1/angular-route.js"></script>
-<script type="text/javascript" src="static/js/main.js"></script>
-<script type="text/javascript" src="static/js/getmessages.js"></script>
+	<script type="text/javascript" src="webjars/angularjs/1.4.1/angular.js"></script>
+	<script type="text/javascript" src="webjars/angularjs/1.4.1/angular-route.js"></script>
+	<script type="text/javascript" src="static/js/main.js"></script>
+	<script type="text/javascript" src="static/js/getmessages.js"></script>
+	<script type="text/javascript" src="static/js/MessagingController.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
-<body  ng-app="mainmodule" class="maincontainer">
+<body  ng-app="mainModule" class="maincontainer">
 	<div ng-controller="MainController" >
  		<button ng-click="getMessages()">Get Messages</button>
  		{{messages}}
  	</div>
+ 	<a href="#/messages">Messages</a>
 	<div ng-view></div>
 
 </body>

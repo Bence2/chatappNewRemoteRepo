@@ -12,4 +12,8 @@
 		select * from person 	 	
 	</select>
 	
+	<select id="getMessagesBasedOn" resultMap="Message">
+		
+	</select>
+	
 </mapper>
